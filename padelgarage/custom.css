@@ -1,12 +1,18 @@
-/*
- * Custom code goes here.
- * A template should always ship with an empty custom.css
- */
- #header {
+.c1f11f {
+    color: #c1f11f;
+}
+ 
+#header {
     background: #000 !important;
     left: unset !important;
     right: 0;
 }
+
+body main #wrapper,
+footer {
+    width: calc(100% - 80px);
+}
+
 body:not(.open-menu) #header {
     width: 80px;
     transition: width 0.3s;
@@ -32,9 +38,7 @@ body.open-menu main {
     padding-left: 0px !important;
     /* width: calc(100% - 280px); */
 }
-body main #wrapper {
-    width: calc(100% - 80px);
-}
+
 body:not(.open-menu) main #wrapper {
     transform: translateX(0px);
     transition: transform 0.3s linear;
@@ -77,7 +81,7 @@ body.open-menu main #wrapper {
 #header #menu-icon .open-btn,
 #header #menu-icon .close-btn {
     font-size: 30px;
-    color: #bdcf0d;
+    color: #c1f11f;
 }
 body:not(.open-menu) #desktop-header #cbp-hrmenu1 {
     transform: translateX(280px);
@@ -99,4 +103,42 @@ body.open-menu #desktop-header #cbp-hrmenu1 a {
     font-size: 16px;
     text-align: center;
     border: 0;
+}
+
+
+/* Homepage */
+.blocco-1 .elementor-widget-container {
+    height: 500px;
+}
+.blocco-2 .elementor-widget-container {
+    height: 245px;
+}
+
+.blocchi-home .elementor-iqit-banner,
+.blocchi-home.elementor-widget-banner .elementor-iqit-banner-img,
+.blocchi-home.elementor-widget-banner .elementor-iqit-banner-img img {
+    height: 100%;
+}
+
+.blocchi-home.blocco-1 .elementor-iqit-banner-description {
+    padding: 0 30%;
+    text-align: left;
+}
+
+
+.loghi-home .elementor-widget-wrap {
+    /* .row */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+    /* .align-items-center */
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.loghi-home .elementor-image {
+    padding: 15px;
 }
